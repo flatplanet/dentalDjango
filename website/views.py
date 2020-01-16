@@ -12,6 +12,7 @@ def contact(request):
 		message = request.POST['message']
 
 		# Send email
+		'''
 		send_mail(
 			message_name, #subject
 			message, # message
@@ -19,7 +20,7 @@ def contact(request):
 			['john@codemy.com'], # to email
 			fail_silently=False,
 			)
-
+		'''
 
 		return render(request, 'contact.html', {'message_name': message_name})
 
